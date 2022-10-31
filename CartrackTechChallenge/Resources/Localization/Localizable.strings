@@ -1,0 +1,33 @@
+/* 
+  Localizable.strings
+  CartrackTechChallenge
+
+  Created by Ricardo Correia on 13/06/2020.
+  Copyright © 2020 Ricardo Correia. All rights reserved.
+*/
+
+login_title = "Login";
+login_failed = "Login Failed";
+login_description = "Get started by entering your personal ID, or register yourself as a new user.";
+login_incorrect_username = "Incorrect username or password";
+
+registration_title = "Registration";
+registration_successfull = "Registration successfull";
+registration_description = "Create a new account";
+registration_welcome = "Welcome!";
+registration_failed = "Registration Failed";
+
+ok = "Ok";
+an_error_has_occurred = "An error has occurred";
+
+works_at = "Works at";
+address = "Address";
+
+select_country_text = "Select you country...";
+username_placeholder = "Username";
+password_placeholder = "Password";
+
+dismiss = "Dismiss";
+
+save = "Save";
+cancel = "Cancel";

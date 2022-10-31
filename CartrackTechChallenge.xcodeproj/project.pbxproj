@@ -1,0 +1,890 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		157DA23C28D2784400E9AE52 /* CartrackTechChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157DA23B28D2784400E9AE52 /* CartrackTechChallengeUITests.swift */; };
+		6FAA04A468CF727DCABF521B /* Pods_CartrackTechChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 967C589DB47CEB780F52B557 /* Pods_CartrackTechChallenge.framework */; };
+		FA0E54DD2493D44B001910D5 /* ICountryPickerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0E54DC2493D44B001910D5 /* ICountryPickerViewModel.swift */; };
+		FA0E54DF2493D467001910D5 /* CountryPickerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0E54DE2493D467001910D5 /* CountryPickerViewModel.swift */; };
+		FA0E54E124944025001910D5 /* DataTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA0E54E024944025001910D5 /* DataTypes.swift */; };
+		FA11D7AF2492516F002AAD87 /* BaseSQLiteRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA11D7AE2492516F002AAD87 /* BaseSQLiteRepository.swift */; };
+		FA11D7B124926478002AAD87 /* ICountryRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA11D7B024926478002AAD87 /* ICountryRepository.swift */; };
+		FA11D7B324926488002AAD87 /* CountryRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA11D7B224926488002AAD87 /* CountryRepository.swift */; };
+		FA11D7B524927627002AAD87 /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA11D7B424927627002AAD87 /* Country.swift */; };
+		FA11D7BA24928AFB002AAD87 /* CountryPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA11D7B924928AFB002AAD87 /* CountryPickerViewController.swift */; };
+		FA15B0262493B42500E7506B /* CartrackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA15B0252493B42500E7506B /* CartrackButton.swift */; };
+		FA15B0282493B42F00E7506B /* CartrackTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA15B0272493B42F00E7506B /* CartrackTextField.swift */; };
+		FA495D97249046AA005B9963 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA495D96249046AA005B9963 /* AppDelegate.swift */; };
+		FA495D9B249046AA005B9963 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA495D9A249046AA005B9963 /* LoginViewController.swift */; };
+		FA495D9E249046AA005B9963 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA495D9C249046AA005B9963 /* Main.storyboard */; };
+		FA495DA0249046AB005B9963 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA495D9F249046AB005B9963 /* Assets.xcassets */; };
+		FA495DC324904850005B9963 /* ILoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA495DC224904850005B9963 /* ILoginViewModel.swift */; };
+		FA495DC52490485E005B9963 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA495DC42490485E005B9963 /* LoginViewModel.swift */; };
+		FA495DC724904871005B9963 /* IRegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA495DC624904871005B9963 /* IRegisterViewModel.swift */; };
+		FA495DC924904881005B9963 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA495DC824904881005B9963 /* RegisterViewController.swift */; };
+		FA495DCB24904893005B9963 /* RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA495DCA24904893005B9963 /* RegisterViewModel.swift */; };
+		FA495DCD249048BA005B9963 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA495DCC249048BA005B9963 /* SceneDelegate.swift */; };
+		FA495DCF249048E2005B9963 /* IUserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA495DCE249048E2005B9963 /* IUserService.swift */; };
+		FA495DD1249048F0005B9963 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA495DD0249048F0005B9963 /* UserService.swift */; };
+		FA495DD3249049D3005B9963 /* UserListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA495DD2249049D3005B9963 /* UserListViewController.swift */; };
+		FA495DD5249049FA005B9963 /* IUserListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA495DD4249049FA005B9963 /* IUserListViewModel.swift */; };
+		FA495DD724904A05005B9963 /* UserListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA495DD624904A05005B9963 /* UserListViewModel.swift */; };
+		FA495DD924904A6E005B9963 /* UserDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA495DD824904A6E005B9963 /* UserDetailsViewController.swift */; };
+		FA495DE524904BF7005B9963 /* DependencyResolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA495DE024904BF7005B9963 /* DependencyResolver.swift */; };
+		FA495DE624904BF7005B9963 /* InjectAppServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA495DE124904BF7005B9963 /* InjectAppServices.swift */; };
+		FA495DE724904BF7005B9963 /* SwinjectStoryboard+Inject.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA495DE224904BF7005B9963 /* SwinjectStoryboard+Inject.swift */; };
+		FA495DE824904BF7005B9963 /* InjectAppViewModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA495DE324904BF7005B9963 /* InjectAppViewModels.swift */; };
+		FA93657924910D8500E51C0D /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA93657824910D8500E51C0D /* User.swift */; };
+		FA93657B249110D900E51C0D /* UserRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA93657A249110D900E51C0D /* UserRepository.swift */; };
+		FA93657E249110FB00E51C0D /* IUserRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA93657D249110FB00E51C0D /* IUserRepository.swift */; };
+		FA9365812491119800E51C0D /* CartrackConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9365802491119800E51C0D /* CartrackConstants.swift */; };
+		FA936583249112EC00E51C0D /* InjectAppRepositories.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA936582249112EC00E51C0D /* InjectAppRepositories.swift */; };
+		FA9365852491218D00E51C0D /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9365842491218D00E51C0D /* Address.swift */; };
+		FA936587249121B500E51C0D /* Geo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA936586249121B500E51C0D /* Geo.swift */; };
+		FA936589249121CF00E51C0D /* Company.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA936588249121CF00E51C0D /* Company.swift */; };
+		FA93658C24912CD500E51C0D /* UserListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA93658B24912CD500E51C0D /* UserListCell.swift */; };
+		FA9F575A2494D75700676FAE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA9F57592494D75700676FAE /* LaunchScreen.storyboard */; };
+		FA9F575E2494E18400676FAE /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = FA9F575D2494E18400676FAE /* Localizable.strings */; };
+		FA9F57602494E27C00676FAE /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9F575F2494E27C00676FAE /* Extensions.swift */; };
+		FAAABFC624913E8100B82268 /* UserDetailsMainCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAABFC524913E8100B82268 /* UserDetailsMainCell.swift */; };
+		FAAABFC82491445C00B82268 /* CompanyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAABFC72491445C00B82268 /* CompanyCell.swift */; };
+		FAAABFCA2491447500B82268 /* AddressCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAABFC92491447500B82268 /* AddressCell.swift */; };
+		FAAABFCC2491AE7D00B82268 /* IAccountService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAABFCB2491AE7D00B82268 /* IAccountService.swift */; };
+		FAAABFCE2491AED000B82268 /* AccountService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAABFCD2491AED000B82268 /* AccountService.swift */; };
+		FAAABFD02491AF2C00B82268 /* IAccountRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAABFCF2491AF2C00B82268 /* IAccountRepository.swift */; };
+		FAAABFD22491AF3C00B82268 /* AccountRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAAABFD12491AF3C00B82268 /* AccountRepository.swift */; };
+		FAEDD0E2249633C5005B30F6 /* AccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEDD0E1249633C5005B30F6 /* AccountViewModel.swift */; };
+		FAEDD0E4249633D3005B30F6 /* IAccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEDD0E3249633D3005B30F6 /* IAccountViewModel.swift */; };
+		FAEDD0E52496377B005B30F6 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEDD0DE2496339E005B30F6 /* AccountViewController.swift */; };
+		FAEF36F02492A1F200E97DDD /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAEF36EF2492A1F200E97DDD /* BaseViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		157DA23F28D2784400E9AE52 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FA495D8B249046A9005B9963 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FA495D92249046AA005B9963;
+			remoteInfo = CartrackTechChallenge;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		157DA23328D2599F00E9AE52 /* Testing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Testing.swift; sourceTree = "<group>"; };
+		157DA23928D2784400E9AE52 /* CartrackTechChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CartrackTechChallengeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		157DA23B28D2784400E9AE52 /* CartrackTechChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartrackTechChallengeUITests.swift; sourceTree = "<group>"; };
+		4175E45F64B95EB6D429A1CD /* Pods-CartrackTechChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CartrackTechChallenge.release.xcconfig"; path = "Target Support Files/Pods-CartrackTechChallenge/Pods-CartrackTechChallenge.release.xcconfig"; sourceTree = "<group>"; };
+		449AE8E7D7B15758A75CD56A /* Pods_CartrackTechChallengeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CartrackTechChallengeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		74818A06BA40F013D5F80F40 /* Pods-CartrackTechChallengeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CartrackTechChallengeTests.release.xcconfig"; path = "Target Support Files/Pods-CartrackTechChallengeTests/Pods-CartrackTechChallengeTests.release.xcconfig"; sourceTree = "<group>"; };
+		90CFB551A88D0A2EB9ED8526 /* Pods-CartrackTechChallenge.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CartrackTechChallenge.debug.xcconfig"; path = "Target Support Files/Pods-CartrackTechChallenge/Pods-CartrackTechChallenge.debug.xcconfig"; sourceTree = "<group>"; };
+		967C589DB47CEB780F52B557 /* Pods_CartrackTechChallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CartrackTechChallenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D173618973B34951CE3EEE17 /* Pods-CartrackTechChallengeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CartrackTechChallengeTests.debug.xcconfig"; path = "Target Support Files/Pods-CartrackTechChallengeTests/Pods-CartrackTechChallengeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		FA0E54DC2493D44B001910D5 /* ICountryPickerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ICountryPickerViewModel.swift; sourceTree = "<group>"; };
+		FA0E54DE2493D467001910D5 /* CountryPickerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryPickerViewModel.swift; sourceTree = "<group>"; };
+		FA0E54E024944025001910D5 /* DataTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataTypes.swift; sourceTree = "<group>"; };
+		FA11D7AE2492516F002AAD87 /* BaseSQLiteRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseSQLiteRepository.swift; sourceTree = "<group>"; };
+		FA11D7B024926478002AAD87 /* ICountryRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ICountryRepository.swift; sourceTree = "<group>"; };
+		FA11D7B224926488002AAD87 /* CountryRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryRepository.swift; sourceTree = "<group>"; };
+		FA11D7B424927627002AAD87 /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
+		FA11D7B924928AFB002AAD87 /* CountryPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryPickerViewController.swift; sourceTree = "<group>"; };
+		FA15B0252493B42500E7506B /* CartrackButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CartrackButton.swift; sourceTree = "<group>"; };
+		FA15B0272493B42F00E7506B /* CartrackTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CartrackTextField.swift; sourceTree = "<group>"; };
+		FA495D93249046AA005B9963 /* CartrackTechChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CartrackTechChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA495D96249046AA005B9963 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FA495D9A249046AA005B9963 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		FA495D9D249046AA005B9963 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FA495D9F249046AB005B9963 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FA495DA4249046AB005B9963 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA495DAF249046AB005B9963 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA495DC224904850005B9963 /* ILoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ILoginViewModel.swift; sourceTree = "<group>"; };
+		FA495DC42490485E005B9963 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		FA495DC624904871005B9963 /* IRegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IRegisterViewModel.swift; sourceTree = "<group>"; };
+		FA495DC824904881005B9963 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		FA495DCA24904893005B9963 /* RegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
+		FA495DCC249048BA005B9963 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		FA495DCE249048E2005B9963 /* IUserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IUserService.swift; sourceTree = "<group>"; };
+		FA495DD0249048F0005B9963 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		FA495DD2249049D3005B9963 /* UserListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListViewController.swift; sourceTree = "<group>"; };
+		FA495DD4249049FA005B9963 /* IUserListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IUserListViewModel.swift; sourceTree = "<group>"; };
+		FA495DD624904A05005B9963 /* UserListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListViewModel.swift; sourceTree = "<group>"; };
+		FA495DD824904A6E005B9963 /* UserDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailsViewController.swift; sourceTree = "<group>"; };
+		FA495DE024904BF7005B9963 /* DependencyResolver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DependencyResolver.swift; sourceTree = "<group>"; };
+		FA495DE124904BF7005B9963 /* InjectAppServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InjectAppServices.swift; sourceTree = "<group>"; };
+		FA495DE224904BF7005B9963 /* SwinjectStoryboard+Inject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "SwinjectStoryboard+Inject.swift"; sourceTree = "<group>"; };
+		FA495DE324904BF7005B9963 /* InjectAppViewModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InjectAppViewModels.swift; sourceTree = "<group>"; };
+		FA93657824910D8500E51C0D /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		FA93657A249110D900E51C0D /* UserRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepository.swift; sourceTree = "<group>"; };
+		FA93657D249110FB00E51C0D /* IUserRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IUserRepository.swift; sourceTree = "<group>"; };
+		FA9365802491119800E51C0D /* CartrackConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartrackConstants.swift; sourceTree = "<group>"; };
+		FA936582249112EC00E51C0D /* InjectAppRepositories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InjectAppRepositories.swift; sourceTree = "<group>"; };
+		FA9365842491218D00E51C0D /* Address.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Address.swift; sourceTree = "<group>"; };
+		FA936586249121B500E51C0D /* Geo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Geo.swift; sourceTree = "<group>"; };
+		FA936588249121CF00E51C0D /* Company.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Company.swift; sourceTree = "<group>"; };
+		FA93658B24912CD500E51C0D /* UserListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListCell.swift; sourceTree = "<group>"; };
+		FA9F57592494D75700676FAE /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FA9F575D2494E18400676FAE /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		FA9F575F2494E27C00676FAE /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		FAAABFC524913E8100B82268 /* UserDetailsMainCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailsMainCell.swift; sourceTree = "<group>"; };
+		FAAABFC72491445C00B82268 /* CompanyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyCell.swift; sourceTree = "<group>"; };
+		FAAABFC92491447500B82268 /* AddressCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressCell.swift; sourceTree = "<group>"; };
+		FAAABFCB2491AE7D00B82268 /* IAccountService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IAccountService.swift; sourceTree = "<group>"; };
+		FAAABFCD2491AED000B82268 /* AccountService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountService.swift; sourceTree = "<group>"; };
+		FAAABFCF2491AF2C00B82268 /* IAccountRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IAccountRepository.swift; sourceTree = "<group>"; };
+		FAAABFD12491AF3C00B82268 /* AccountRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountRepository.swift; sourceTree = "<group>"; };
+		FAEDD0DE2496339E005B30F6 /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
+		FAEDD0E1249633C5005B30F6 /* AccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewModel.swift; sourceTree = "<group>"; };
+		FAEDD0E3249633D3005B30F6 /* IAccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IAccountViewModel.swift; sourceTree = "<group>"; };
+		FAEDD0E72496DC8A005B30F6 /* get_user_list.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = get_user_list.json; sourceTree = "<group>"; };
+		FAEDD0E92496DCEC005B30F6 /* UnitTestingUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitTestingUtils.swift; sourceTree = "<group>"; };
+		FAEDD0ED2496E062005B30F6 /* UserServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UserServiceTests.swift; path = ../UserServiceTests.swift; sourceTree = "<group>"; };
+		FAEDD0EF2496E47B005B30F6 /* get_user_list_error.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = get_user_list_error.json; sourceTree = "<group>"; };
+		FAEDD0F32496E67A005B30F6 /* AccountServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountServiceTests.swift; sourceTree = "<group>"; };
+		FAEF36EF2492A1F200E97DDD /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		157DA23628D2784400E9AE52 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA495D90249046AA005B9963 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6FAA04A468CF727DCABF521B /* Pods_CartrackTechChallenge.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		157DA23A28D2784400E9AE52 /* CartrackTechChallengeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				157DA23B28D2784400E9AE52 /* CartrackTechChallengeUITests.swift */,
+			);
+			path = CartrackTechChallengeUITests;
+			sourceTree = "<group>";
+		};
+		852107D5D2F0CFA64275E3D7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				90CFB551A88D0A2EB9ED8526 /* Pods-CartrackTechChallenge.debug.xcconfig */,
+				4175E45F64B95EB6D429A1CD /* Pods-CartrackTechChallenge.release.xcconfig */,
+				D173618973B34951CE3EEE17 /* Pods-CartrackTechChallengeTests.debug.xcconfig */,
+				74818A06BA40F013D5F80F40 /* Pods-CartrackTechChallengeTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		99AB85809098FC68462E3DB1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				967C589DB47CEB780F52B557 /* Pods_CartrackTechChallenge.framework */,
+				449AE8E7D7B15758A75CD56A /* Pods_CartrackTechChallengeTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FA15B0242493B3F500E7506B /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				FA15B0272493B42F00E7506B /* CartrackTextField.swift */,
+				FA15B0252493B42500E7506B /* CartrackButton.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		FA495D8A249046A9005B9963 = {
+			isa = PBXGroup;
+			children = (
+				FA495D95249046AA005B9963 /* CartrackTechChallenge */,
+				FA495DAC249046AB005B9963 /* CartrackTechChallengeTests */,
+				157DA23A28D2784400E9AE52 /* CartrackTechChallengeUITests */,
+				FA495D94249046AA005B9963 /* Products */,
+				852107D5D2F0CFA64275E3D7 /* Pods */,
+				99AB85809098FC68462E3DB1 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		FA495D94249046AA005B9963 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FA495D93249046AA005B9963 /* CartrackTechChallenge.app */,
+				157DA23928D2784400E9AE52 /* CartrackTechChallengeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FA495D95249046AA005B9963 /* CartrackTechChallenge */ = {
+			isa = PBXGroup;
+			children = (
+				FA495D96249046AA005B9963 /* AppDelegate.swift */,
+				FA495DCC249048BA005B9963 /* SceneDelegate.swift */,
+				FAEF36EE2492A1D900E97DDD /* Base */,
+				FAEDD0E0249633A6005B30F6 /* Account */,
+				FA495DB824904792005B9963 /* Register */,
+				FA495DBC249047AB005B9963 /* Login */,
+				FA495DB9249047AA005B9963 /* Users */,
+				FA495DBD249047AC005B9963 /* Model */,
+				FA495DBE249047AC005B9963 /* Services */,
+				FA93657F2491117D00E51C0D /* Utils */,
+				FA495DDE24904BF7005B9963 /* Swinject */,
+				FA495DC1249047BE005B9963 /* Resources */,
+				FA495D9F249046AB005B9963 /* Assets.xcassets */,
+				FA495DA4249046AB005B9963 /* Info.plist */,
+			);
+			path = CartrackTechChallenge;
+			sourceTree = "<group>";
+		};
+		FA495DAC249046AB005B9963 /* CartrackTechChallengeTests */ = {
+			isa = PBXGroup;
+			children = (
+				FAEDD0E62496DC61005B30F6 /* Mock */,
+				FAEDD0EC2496DDC7005B30F6 /* Services */,
+				FAEDD0E92496DCEC005B30F6 /* UnitTestingUtils.swift */,
+				FA495DAF249046AB005B9963 /* Info.plist */,
+			);
+			path = CartrackTechChallengeTests;
+			sourceTree = "<group>";
+		};
+		FA495DB824904792005B9963 /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				FA495DC824904881005B9963 /* RegisterViewController.swift */,
+				FA495DC624904871005B9963 /* IRegisterViewModel.swift */,
+				FA495DCA24904893005B9963 /* RegisterViewModel.swift */,
+				FA11D7B924928AFB002AAD87 /* CountryPickerViewController.swift */,
+				FA0E54DC2493D44B001910D5 /* ICountryPickerViewModel.swift */,
+				FA0E54DE2493D467001910D5 /* CountryPickerViewModel.swift */,
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
+		FA495DB9249047AA005B9963 /* Users */ = {
+			isa = PBXGroup;
+			children = (
+				FA93658A24912CC700E51C0D /* Cells */,
+				FA495DD2249049D3005B9963 /* UserListViewController.swift */,
+				FA495DD4249049FA005B9963 /* IUserListViewModel.swift */,
+				FA495DD624904A05005B9963 /* UserListViewModel.swift */,
+				FA495DD824904A6E005B9963 /* UserDetailsViewController.swift */,
+			);
+			path = Users;
+			sourceTree = "<group>";
+		};
+		FA495DBC249047AB005B9963 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				FA495D9A249046AA005B9963 /* LoginViewController.swift */,
+				FA495DC224904850005B9963 /* ILoginViewModel.swift */,
+				FA495DC42490485E005B9963 /* LoginViewModel.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		FA495DBD249047AC005B9963 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FA93657C249110E300E51C0D /* Data */,
+				FA0E54E024944025001910D5 /* DataTypes.swift */,
+				FA11D7AE2492516F002AAD87 /* BaseSQLiteRepository.swift */,
+				FA93657D249110FB00E51C0D /* IUserRepository.swift */,
+				FA93657A249110D900E51C0D /* UserRepository.swift */,
+				FAAABFCF2491AF2C00B82268 /* IAccountRepository.swift */,
+				FAAABFD12491AF3C00B82268 /* AccountRepository.swift */,
+				FA11D7B024926478002AAD87 /* ICountryRepository.swift */,
+				FA11D7B224926488002AAD87 /* CountryRepository.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FA495DBE249047AC005B9963 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				FA495DCE249048E2005B9963 /* IUserService.swift */,
+				FA495DD0249048F0005B9963 /* UserService.swift */,
+				FAAABFCB2491AE7D00B82268 /* IAccountService.swift */,
+				FAAABFCD2491AED000B82268 /* AccountService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		FA495DC1249047BE005B9963 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FA9F575B2494E13800676FAE /* Storyboards */,
+				FA9F575C2494E14900676FAE /* Localization */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		FA495DDE24904BF7005B9963 /* Swinject */ = {
+			isa = PBXGroup;
+			children = (
+				FA495DE024904BF7005B9963 /* DependencyResolver.swift */,
+				FA495DE324904BF7005B9963 /* InjectAppViewModels.swift */,
+				FA495DE124904BF7005B9963 /* InjectAppServices.swift */,
+				FA936582249112EC00E51C0D /* InjectAppRepositories.swift */,
+				FA495DE224904BF7005B9963 /* SwinjectStoryboard+Inject.swift */,
+			);
+			path = Swinject;
+			sourceTree = "<group>";
+		};
+		FA93657C249110E300E51C0D /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				FA9365842491218D00E51C0D /* Address.swift */,
+				FA11D7B424927627002AAD87 /* Country.swift */,
+				FA936588249121CF00E51C0D /* Company.swift */,
+				FA936586249121B500E51C0D /* Geo.swift */,
+				FA93657824910D8500E51C0D /* User.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		FA93657F2491117D00E51C0D /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				FA15B0242493B3F500E7506B /* UI */,
+				FA9365802491119800E51C0D /* CartrackConstants.swift */,
+				FA9F575F2494E27C00676FAE /* Extensions.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		FA93658A24912CC700E51C0D /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				FA93658B24912CD500E51C0D /* UserListCell.swift */,
+				FAAABFC524913E8100B82268 /* UserDetailsMainCell.swift */,
+				FAAABFC72491445C00B82268 /* CompanyCell.swift */,
+				FAAABFC92491447500B82268 /* AddressCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		FA9F575B2494E13800676FAE /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				FA495D9C249046AA005B9963 /* Main.storyboard */,
+				FA9F57592494D75700676FAE /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		FA9F575C2494E14900676FAE /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				FA9F575D2494E18400676FAE /* Localizable.strings */,
+			);
+			path = Localization;
+			sourceTree = "<group>";
+		};
+		FAEDD0E0249633A6005B30F6 /* Account */ = {
+			isa = PBXGroup;
+			children = (
+				FAEDD0DE2496339E005B30F6 /* AccountViewController.swift */,
+				FAEDD0E3249633D3005B30F6 /* IAccountViewModel.swift */,
+				FAEDD0E1249633C5005B30F6 /* AccountViewModel.swift */,
+			);
+			path = Account;
+			sourceTree = "<group>";
+		};
+		FAEDD0E62496DC61005B30F6 /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				FAEDD0EB2496DD8C005B30F6 /* Requests */,
+			);
+			path = Mock;
+			sourceTree = "<group>";
+		};
+		FAEDD0EB2496DD8C005B30F6 /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				FAEDD0E72496DC8A005B30F6 /* get_user_list.json */,
+				FAEDD0EF2496E47B005B30F6 /* get_user_list_error.json */,
+			);
+			path = Requests;
+			sourceTree = "<group>";
+		};
+		FAEDD0EC2496DDC7005B30F6 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				157DA23328D2599F00E9AE52 /* Testing.swift */,
+				FAEDD0ED2496E062005B30F6 /* UserServiceTests.swift */,
+				FAEDD0F32496E67A005B30F6 /* AccountServiceTests.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		FAEF36EE2492A1D900E97DDD /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				FAEF36EF2492A1F200E97DDD /* BaseViewController.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		157DA23828D2784400E9AE52 /* CartrackTechChallengeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 157DA24328D2784400E9AE52 /* Build configuration list for PBXNativeTarget "CartrackTechChallengeUITests" */;
+			buildPhases = (
+				157DA23528D2784400E9AE52 /* Sources */,
+				157DA23628D2784400E9AE52 /* Frameworks */,
+				157DA23728D2784400E9AE52 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				157DA24028D2784400E9AE52 /* PBXTargetDependency */,
+			);
+			name = CartrackTechChallengeUITests;
+			productName = CartrackTechChallengeUITests;
+			productReference = 157DA23928D2784400E9AE52 /* CartrackTechChallengeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		FA495D92249046AA005B9963 /* CartrackTechChallenge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FA495DB2249046AB005B9963 /* Build configuration list for PBXNativeTarget "CartrackTechChallenge" */;
+			buildPhases = (
+				9F9DA9DD215A06BDE3A8F726 /* [CP] Check Pods Manifest.lock */,
+				FA495D8F249046AA005B9963 /* Sources */,
+				FA495D90249046AA005B9963 /* Frameworks */,
+				FA495D91249046AA005B9963 /* Resources */,
+				DD60FA20EEBEC961593C5EFB /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CartrackTechChallenge;
+			productName = CartrackTechChallenge;
+			productReference = FA495D93249046AA005B9963 /* CartrackTechChallenge.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FA495D8B249046A9005B9963 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1110;
+				ORGANIZATIONNAME = "Ricardo Correia";
+				TargetAttributes = {
+					157DA23828D2784400E9AE52 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = FA495D92249046AA005B9963;
+					};
+					FA495D92249046AA005B9963 = {
+						CreatedOnToolsVersion = 11.1;
+					};
+				};
+			};
+			buildConfigurationList = FA495D8E249046A9005B9963 /* Build configuration list for PBXProject "CartrackTechChallenge" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FA495D8A249046A9005B9963;
+			productRefGroup = FA495D94249046AA005B9963 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FA495D92249046AA005B9963 /* CartrackTechChallenge */,
+				157DA23828D2784400E9AE52 /* CartrackTechChallengeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		157DA23728D2784400E9AE52 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA495D91249046AA005B9963 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA9F575A2494D75700676FAE /* LaunchScreen.storyboard in Resources */,
+				FA9F575E2494E18400676FAE /* Localizable.strings in Resources */,
+				FA495DA0249046AB005B9963 /* Assets.xcassets in Resources */,
+				FA495D9E249046AA005B9963 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9F9DA9DD215A06BDE3A8F726 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CartrackTechChallenge-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DD60FA20EEBEC961593C5EFB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CartrackTechChallenge/Pods-CartrackTechChallenge-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CartrackTechChallenge/Pods-CartrackTechChallenge-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CartrackTechChallenge/Pods-CartrackTechChallenge-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		157DA23528D2784400E9AE52 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				157DA23C28D2784400E9AE52 /* CartrackTechChallengeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA495D8F249046AA005B9963 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAAABFD02491AF2C00B82268 /* IAccountRepository.swift in Sources */,
+				FAAABFC624913E8100B82268 /* UserDetailsMainCell.swift in Sources */,
+				FA93657B249110D900E51C0D /* UserRepository.swift in Sources */,
+				FAAABFCA2491447500B82268 /* AddressCell.swift in Sources */,
+				FAEF36F02492A1F200E97DDD /* BaseViewController.swift in Sources */,
+				FAEDD0E2249633C5005B30F6 /* AccountViewModel.swift in Sources */,
+				FA9365852491218D00E51C0D /* Address.swift in Sources */,
+				FAEDD0E52496377B005B30F6 /* AccountViewController.swift in Sources */,
+				FA9365812491119800E51C0D /* CartrackConstants.swift in Sources */,
+				FA495DC924904881005B9963 /* RegisterViewController.swift in Sources */,
+				FA495DD3249049D3005B9963 /* UserListViewController.swift in Sources */,
+				FA495DCB24904893005B9963 /* RegisterViewModel.swift in Sources */,
+				FA11D7B324926488002AAD87 /* CountryRepository.swift in Sources */,
+				FA11D7BA24928AFB002AAD87 /* CountryPickerViewController.swift in Sources */,
+				FAAABFCE2491AED000B82268 /* AccountService.swift in Sources */,
+				FA495DE524904BF7005B9963 /* DependencyResolver.swift in Sources */,
+				FA495DC324904850005B9963 /* ILoginViewModel.swift in Sources */,
+				FA495DD924904A6E005B9963 /* UserDetailsViewController.swift in Sources */,
+				FA495D9B249046AA005B9963 /* LoginViewController.swift in Sources */,
+				FA15B0262493B42500E7506B /* CartrackButton.swift in Sources */,
+				FA936589249121CF00E51C0D /* Company.swift in Sources */,
+				FA495DCD249048BA005B9963 /* SceneDelegate.swift in Sources */,
+				FAAABFC82491445C00B82268 /* CompanyCell.swift in Sources */,
+				FA936583249112EC00E51C0D /* InjectAppRepositories.swift in Sources */,
+				FA93657E249110FB00E51C0D /* IUserRepository.swift in Sources */,
+				FAAABFCC2491AE7D00B82268 /* IAccountService.swift in Sources */,
+				FA0E54DF2493D467001910D5 /* CountryPickerViewModel.swift in Sources */,
+				FA495DE724904BF7005B9963 /* SwinjectStoryboard+Inject.swift in Sources */,
+				FA495DE624904BF7005B9963 /* InjectAppServices.swift in Sources */,
+				FA495D97249046AA005B9963 /* AppDelegate.swift in Sources */,
+				FA495DD5249049FA005B9963 /* IUserListViewModel.swift in Sources */,
+				FA495DE824904BF7005B9963 /* InjectAppViewModels.swift in Sources */,
+				FA495DC724904871005B9963 /* IRegisterViewModel.swift in Sources */,
+				FA11D7B524927627002AAD87 /* Country.swift in Sources */,
+				FAEDD0E4249633D3005B30F6 /* IAccountViewModel.swift in Sources */,
+				FAAABFD22491AF3C00B82268 /* AccountRepository.swift in Sources */,
+				FA11D7AF2492516F002AAD87 /* BaseSQLiteRepository.swift in Sources */,
+				FA495DD724904A05005B9963 /* UserListViewModel.swift in Sources */,
+				FA0E54E124944025001910D5 /* DataTypes.swift in Sources */,
+				FA495DD1249048F0005B9963 /* UserService.swift in Sources */,
+				FA11D7B124926478002AAD87 /* ICountryRepository.swift in Sources */,
+				FA495DCF249048E2005B9963 /* IUserService.swift in Sources */,
+				FA495DC52490485E005B9963 /* LoginViewModel.swift in Sources */,
+				FA0E54DD2493D44B001910D5 /* ICountryPickerViewModel.swift in Sources */,
+				FA9F57602494E27C00676FAE /* Extensions.swift in Sources */,
+				FA93658C24912CD500E51C0D /* UserListCell.swift in Sources */,
+				FA93657924910D8500E51C0D /* User.swift in Sources */,
+				FA15B0282493B42F00E7506B /* CartrackTextField.swift in Sources */,
+				FA936587249121B500E51C0D /* Geo.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		157DA24028D2784400E9AE52 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FA495D92249046AA005B9963 /* CartrackTechChallenge */;
+			targetProxy = 157DA23F28D2784400E9AE52 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FA495D9C249046AA005B9963 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FA495D9D249046AA005B9963 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		157DA24128D2784400E9AE52 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = L3GL9ZC55D;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.greenminer.CartrackTechChallengeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CartrackTechChallenge;
+			};
+			name = Debug;
+		};
+		157DA24228D2784400E9AE52 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = L3GL9ZC55D;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.greenminer.CartrackTechChallengeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CartrackTechChallenge;
+			};
+			name = Release;
+		};
+		FA495DB0249046AB005B9963 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FA495DB1249046AB005B9963 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FA495DB3249046AB005B9963 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 90CFB551A88D0A2EB9ED8526 /* Pods-CartrackTechChallenge.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L3GL9ZC55D;
+				INFOPLIST_FILE = CartrackTechChallenge/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.CartrackTechChallenge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FA495DB4249046AB005B9963 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4175E45F64B95EB6D429A1CD /* Pods-CartrackTechChallenge.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = L3GL9ZC55D;
+				INFOPLIST_FILE = CartrackTechChallenge/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.CartrackTechChallenge;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		157DA24328D2784400E9AE52 /* Build configuration list for PBXNativeTarget "CartrackTechChallengeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				157DA24128D2784400E9AE52 /* Debug */,
+				157DA24228D2784400E9AE52 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA495D8E249046A9005B9963 /* Build configuration list for PBXProject "CartrackTechChallenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA495DB0249046AB005B9963 /* Debug */,
+				FA495DB1249046AB005B9963 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FA495DB2249046AB005B9963 /* Build configuration list for PBXNativeTarget "CartrackTechChallenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA495DB3249046AB005B9963 /* Debug */,
+				FA495DB4249046AB005B9963 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FA495D8B249046A9005B9963 /* Project object */;
+}

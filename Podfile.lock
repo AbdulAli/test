@@ -1,0 +1,56 @@
+PODS:
+  - Alamofire (4.8.2)
+  - Mockingjay (3.0.0-alpha.1):
+    - Mockingjay/Core (= 3.0.0-alpha.1)
+    - Mockingjay/XCTest (= 3.0.0-alpha.1)
+  - Mockingjay/Core (3.0.0-alpha.1):
+    - URITemplate (~> 3.0)
+  - Mockingjay/XCTest (3.0.0-alpha.1):
+    - Mockingjay/Core
+  - RxCocoa (5.0.0):
+    - RxRelay (~> 5)
+    - RxSwift (~> 5)
+  - RxRelay (5.1.3):
+    - RxSwift (~> 5)
+  - RxSwift (5.0.0)
+  - SwiftyJSON (5.0.0)
+  - Swinject (2.6.2)
+  - SwinjectStoryboard (2.2.0):
+    - Swinject (~> 2.6)
+  - URITemplate (3.0.1)
+
+DEPENDENCIES:
+  - Alamofire (= 4.8.2)
+  - Mockingjay (= 3.0.0-alpha.1)
+  - RxCocoa (= 5.0.0)
+  - RxSwift (= 5.0.0)
+  - SwiftyJSON (= 5.0.0)
+  - Swinject (= 2.6.2)
+  - SwinjectStoryboard (= 2.2.0)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - Mockingjay
+    - RxCocoa
+    - RxRelay
+    - RxSwift
+    - SwiftyJSON
+    - Swinject
+    - SwinjectStoryboard
+    - URITemplate
+
+SPEC CHECKSUMS:
+  Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
+  Mockingjay: 0f7c5aa49c7f1b95621cee3c79b557141f5a225c
+  RxCocoa: fcf32050ac00d801f34a7f71d5e8e7f23026dcd8
+  RxRelay: 5a18c2eb2d68326ebaf0112f80d837ae41b92b97
+  RxSwift: 8b0671caa829a763bbce7271095859121cbd895f
+  SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
+  Swinject: cf7458774b1b00323080a9c67e47a1ee7f9d2af1
+  SwinjectStoryboard: 32512ef16c2b0ff5b8f823b23539c4a50f6d3383
+  URITemplate: 5f5a79f3e384884102c4e6b3325d159c20a8035a
+
+PODFILE CHECKSUM: e6bc7a597120bcdf210f79ec28081d04bbce0d95
+
+COCOAPODS: 1.10.1

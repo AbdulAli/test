@@ -10,11 +10,9 @@ jobs:
   job-1:
     name: Just print all files
     runs-on: macos-latest
-    outputs:
-      output1: ${{ steps.run_tests.outputs.test }}
     steps:
       - id: run_tests
-        run: echo "test=hello" >> $GITHUB_OUTPUT
+        run: echo "output=${ls -R}" >> $GITHUB_OUTPUT
       - name: Dump file hierarchy
-        run: echo ${{steps.run_tests.outputs.test}}
+        run: echo ${{steps.run_tests.outputs.output}}
            

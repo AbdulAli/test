@@ -10,11 +10,9 @@ jobs:
   job1:
     name: Just print all files
     runs-on: macos-latest
-    outputs:
-      output1: ${{ steps.run_tests.outputs.test }}
     steps:
       - id: run_tests
         run: |
           echo "test=hello" >> $GITHUB_OUTPUT
-          echo ${{steps.job1.outputs.output1}}
+          echo ${{steps.run_tests.outputs.test}}
     

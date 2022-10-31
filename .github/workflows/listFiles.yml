@@ -12,4 +12,6 @@ jobs:
     runs-on: macos-latest
     steps:
       - name: Dump file hierarchy
-        run: ls -R
+        run: |
+          echo "Dump file hierarchy"
+          ls -R

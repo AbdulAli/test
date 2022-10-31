@@ -15,4 +15,5 @@ jobs:
         run: |
           echo "::group::My title"
           echo "Inside group"
+          ls -R
           echo "::endgroup::"

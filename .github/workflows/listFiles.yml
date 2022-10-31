@@ -12,6 +12,8 @@ jobs:
     runs-on: macos-latest
     steps:
       - id: run_tests
-        run: |
+        run: 
           echo "test=hello" >> $GITHUB_OUTPUT
+      - name: dumping
+        run:
           echo ${{steps.run_tests.outputs.test}}

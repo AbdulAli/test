@@ -13,5 +13,6 @@ jobs:
     steps:
       - name: Dump file hierarchy
         run: |
-          echo "Dump file hierarchy"
-          ls -R
+          echo "::group::My title"
+          echo "Inside group"
+          echo "::endgroup::"

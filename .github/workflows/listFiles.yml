@@ -7,18 +7,12 @@ on:
     branches: [ "main" ]
 
 jobs:
-  build:
+  job-1:
     name: Just print all files
     runs-on: macos-latest
     steps:
       - id: run_tests
-        run: |
-          echo "::group::My title"
-          echo "Inside group"
-          echo "test=hello" >> $GITHUB_OUTPUT
-          echo ${{outputs}}
-          echo The output is ${{TAG_NAME}}
-          echo "::endgroup::"
+        run: echo "test=hello" >> $GITHUB_OUTPUT
       - name: Dump file hierarchy
         run: echo ${{steps.run_tests.outputs.*}}
            

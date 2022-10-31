@@ -16,4 +16,5 @@ jobs:
           echo "::group::My title"
           echo "Inside group"
           echo "TAG_NAME=$(ls -R)" >> $GITHUB_OUTPUT
+          echo $GITHUB_OUTPUT
           echo "::endgroup::"

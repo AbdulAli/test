@@ -11,6 +11,5 @@ jobs:
     name: Just print all files
     runs-on: macos-latest
     steps:
-      - name: Checkout
-      - name: Set Default Scheme
+      - name: Dump file hierarchy
         run: ls -R

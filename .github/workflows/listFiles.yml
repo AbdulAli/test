@@ -7,14 +7,14 @@ on:
     branches: [ "main" ]
 
 jobs:
-  job11:
+  job1:
     name: Just print all files
     runs-on: macos-latest
     outputs:
       output1: ${{ steps.run_tests.outputs.test }}
     steps:
       - id: run_tests
-        run: echo "test=$(ls -R)" >> $GITHUB_OUTPUT
-      - name: Dump file hierarchy
-        run: echo ${{steps.run_tests.outputs.output1}}
-           
+        run: |
+          echo "test=hello" >> $GITHUB_OUTPUT
+          echo ${{job1.outputs.output1}}
+    

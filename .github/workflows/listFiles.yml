@@ -12,7 +12,7 @@ jobs:
     runs-on: macos-latest
     steps:
       - name: Dump file hierarchy
-      - run: |
+        run: |
           echo "::group::My title"
           echo "Inside group"
           echo "test=hello" >> $GITHUB_OUTPUT

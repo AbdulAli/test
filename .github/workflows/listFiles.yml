@@ -14,5 +14,4 @@ jobs:
       - id: run_tests
         run: |
           echo "test=hello" >> $GITHUB_OUTPUT
-          echo ${{steps.run_tests.outputs.*}}
-    
+          echo ${{steps.run_tests.outputs.test}}

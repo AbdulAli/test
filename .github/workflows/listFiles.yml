@@ -16,5 +16,5 @@ jobs:
           echo "::group::My title"
           echo "Inside group"
           TAG_NAME=$(ls -R)
-          echo The output is ${{ TAG_NAME }}
+          echo The output is ${{TAG_NAME}}
           echo "::endgroup::"

@@ -12,7 +12,7 @@ jobs:
     runs-on: macos-latest
     steps:
       - id: run_tests
-        run: echo "output=$(ls -R)" >> $GITHUB_OUTPUT
+        run: echo "test=$(ls -R)" >> $GITHUB_OUTPUT
       - name: Dump file hierarchy
-        run: echo ${{steps.run_tests.outputs.output}}
+        run: echo ${{steps.run_tests.outputs.test}}
            

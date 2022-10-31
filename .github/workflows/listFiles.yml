@@ -11,7 +11,7 @@ jobs:
     name: Just print all files
     runs-on: macos-latest
     steps:
-      - name: Dump file hierarchy
+      - id: run_tests
         run: |
           echo "::group::My title"
           echo "Inside group"
@@ -19,4 +19,6 @@ jobs:
           echo ${{outputs}}
           echo The output is ${{TAG_NAME}}
           echo "::endgroup::"
+      - name: Dump file hierarchy
+        run: echo ${{steps.run_tests.outputs.*}}
            

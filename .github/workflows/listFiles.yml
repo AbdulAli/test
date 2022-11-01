@@ -12,6 +12,6 @@ jobs:
     runs-on: macos-latest
     steps:
       - id: run_tests
-        run: echo "FOO=$(ls -R)" >> $GITHUB_ENV
+        run: echo "FOO=$(git status)" >> $GITHUB_ENV
       - name: dumping
         run: echo "${{ env.FOO }}"

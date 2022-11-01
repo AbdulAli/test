@@ -16,4 +16,4 @@ jobs:
           echo "test=$(ls -R)" >> $GITHUB_OUTPUT
       - name: dumping
         run:
-          echo ${steps.run_tests.outputs.test}
+          echo ${{steps.run_tests.outputs.test.*}}

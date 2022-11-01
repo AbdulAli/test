@@ -16,4 +16,4 @@ jobs:
           echo "test=$(pwd)" >> $GITHUB_OUTPUT
       - name: dumping
         run:
-          echo ${{join(steps.run_tests.outputs.*, '\n')}}
+          echo ${{steps.run_tests.outputs.test}}

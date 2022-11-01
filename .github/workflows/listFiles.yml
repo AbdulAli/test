@@ -5,15 +5,16 @@ on:
     branches: [ "main" ]
   pull_request:
     branches: [ "main" ]
-
+    
 jobs:
-  job1:
-    name: Just print all files
+  build:
+    name: Build and Test default scheme using any available iPhone simulator
     runs-on: macos-latest
+
     steps:
-      - id: run_tests
-        run: 
-          echo "test=$(ls)" >> $GITHUB_OUTPUT
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Set Default Scheme
+        run: echo "test=$(pwd)" >> $GITHUB_OUTPUT
       - name: dumping
-        run:
-          echo ${{steps.run_tests.outputs.test}}
+        run: echo ${{steps.run_tests.outputs.test}}

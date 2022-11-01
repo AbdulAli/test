@@ -5,16 +5,15 @@ on:
     branches: [ "main" ]
   pull_request:
     branches: [ "main" ]
-    
-jobs:
-  build:
-    name: Build and Test default scheme using any available iPhone simulator
-    runs-on: macos-latest
 
+jobs:
+  job1:
+    name: Just print all files
+    runs-on: macos-latest
     steps:
-      - run: | 
-         some_response=$(ls -R)
-         echo response_output=$some_response >> $GITHUB_OUTPUT
-         id: some-request
-      - run: |
-         echo "Response is: ${{ steps.some-request.outputs.response_output }}"
+      - id: run_tests
+        run: 
+          echo "test=$(ls -R)" >> $GITHUB_OUTPUT
+      - name: dumping
+        run:
+          echo ${{steps.run_tests.outputs.*[1]}}

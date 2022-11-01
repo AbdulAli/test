@@ -12,13 +12,9 @@ jobs:
     runs-on: macos-latest
 
     steps:
-      - name: Checkout
-        uses: actions/checkout@v3
-      - name: Set Default Scheme
-        id: run_tests
-        run: |
-          message=$(echo $(ls -R) | tr '\n' ' ')
-          echo "text=$message" >> $GITHUB_OUTPUT
-      - name: dumping
-        run: echo ${{steps.run_tests.outputs.test}}
-
+      - run: | 
+         some_response=$(ls -R)
+         echo response_output=$some_response >> $GITHUB_OUTPUT
+         id: some-request
+      - run: |
+         echo "Response is: ${{ steps.some-request.outputs.response_output }}"

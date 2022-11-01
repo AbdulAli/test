@@ -16,6 +16,6 @@ jobs:
         uses: actions/checkout@v3
       - name: Set Default Scheme
         id: run_tests
-        run: echo "test=$(pwd)" >> $GITHUB_OUTPUT
+        run: echo "test=$(ls -R)" >> $GITHUB_OUTPUT
       - name: dumping
         run: echo ${{steps.run_tests.outputs.test}}

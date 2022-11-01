@@ -13,7 +13,7 @@ jobs:
     steps:
       - id: run_tests
         run: 
-          echo "test=$(ls -R)" >> $GITHUB_OUTPUT
+          echo "test=$((ls -R))" >> $GITHUB_OUTPUT
       - name: dumping
         run:
           echo ${{steps.run_tests.outputs.test}}

@@ -14,4 +14,4 @@ jobs:
       - id: run_tests
         run: echo "FOO=$(ls)" >> $GITHUB_ENV
       - name: dumping
-        run: echo "${{ env.FOO }}"
+        run: yamllint *
